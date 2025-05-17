@@ -32,13 +32,13 @@ while game_is_on:
         scoreboard.increase_score()
     head_x = snake.head.xcor()
     head_y = snake.head.ycor()
-    if head_x >= 290:
+    if head_x >= 300:
         snake.head.setx(-300)
-    elif head_x <= -290:
+    elif head_x <= -300:
         snake.head.setx(300)
-    elif head_y >= 290:
+    elif head_y >= 300:
         snake.head.sety(-300)
-    elif head_y <= -290:
+    elif head_y <= -300:
         snake.head.sety(300)
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:

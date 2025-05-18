@@ -2,7 +2,7 @@ from turtle import Turtle
 
 
 class Paddle(Turtle):
-    def __init__(self, position:tuple[int, int] = (0, 0)):
+    def __init__(self, position: tuple[int, int] = (0, 0)):
         super().__init__()
         self.score = 0
         self.shape("square")
